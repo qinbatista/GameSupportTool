@@ -1,0 +1,39 @@
+补单系统整理
+
+2.渠道支付回调，接收渠道，订单号，游戏id，商品id，商品名称，价格， 玩家唯一标识 
+3.客户端查询API 通过玩家唯一标识，返回未完成订单-商品id，商品名称，商品价格
+
+
+接口
+渠道回调
+www.singmaan.com:8003/callback
+post 参数: {
+"channel":   ,
+"orderid": ,
+"gameid": ,
+"itemid": ,
+"price": ,
+"uuid": 
+}
+
+前端查询
+www.singmaan.com:8003/query
+post参数: {
+"uuid": ,	
+}
+返回参数： json列表
+[
+{
+ "channel":   ,
+"orderid": ,
+"gameid": ,
+"itemid": ,
+"price": ,
+"uuid": 
+}
+]
+前端确认已完成订单
+www.singmaan.com:8003/check
+post 参数：{
+"orderid": [ ,]  --orderid列表
+}

@@ -1,0 +1,90 @@
+<!--sdk--> 
+ 
+	<meta-data  
+		android:name="com.huawei.hms.client.appid"  
+		android:value="appid=100090525">  
+	</meta-data>    
+
+	<meta-data
+		android:name="com.huawei.hms.client.cpid"
+		android:value="cpid=900086000020107215">
+	</meta-data> 
+	<activity  
+		android:name="com.huawei.hms.activity.BridgeActivity"  
+		android:configChanges="orientation|locale|screenSize|layoutDirection|fontScale"  
+		android:excludeFromRecents="true"  
+		android:exported="false"  
+		android:hardwareAccelerated="true"  
+		android:theme="@android:style/Theme.Translucent" >  
+		<meta-data  
+			android:name="hwc-theme"  
+			android:value="androidhwext:style/Theme.Emui.Translucent" />  
+	</activity>   
+
+	<activity
+		android:name="com.huawei.updatesdk.service.otaupdate.AppUpdateActivity"
+		android:configChanges="orientation|screenSize"
+		android:exported="false"
+		android:theme="@style/upsdkDlDialog" >
+
+		<meta-data
+			android:name="hwc-theme"
+			android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar" />
+	</activity>
+
+	<activity
+		android:name="com.huawei.updatesdk.support.pm.PackageInstallerActivity"
+		android:configChanges="orientation|keyboardHidden|screenSize"
+		android:exported="false"
+		android:theme="@style/upsdkDlDialog" >
+		<meta-data
+			android:name="hwc-theme"
+			android:value="androidhwext:style/Theme.Emui.Translucent" />
+	</activity> 
+
+	<provider  
+		android:name="com.huawei.hms.update.provider.UpdateProvider"   
+	   android:authorities="com.east2west.IronMarine.huawei.hms.update.provider"  
+		android:exported="false"  
+		android:grantUriPermissions="true" >  
+	</provider>  
+	 <provider
+		android:name="com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider"
+  
+		android:authorities="air.amanita_design.samorost3.E2W.huawei.updateSdk.fileProvider"
+		android:exported="false"
+		android:grantUriPermissions="true">
+	</provider> 
+	<activity
+		android:name="com.huawei.android.hms.agent.common.HMSAgentActivity"
+		android:configChanges="orientation|locale|screenSize|layoutDirection|fontScale"
+		android:excludeFromRecents="true"
+		android:exported="false"
+		android:hardwareAccelerated="true"
+		android:theme="@android:style/Theme.Translucent" >
+		<meta-data
+			android:name="hwc-theme"
+			android:value="androidhwext:style/Theme.Emui.Translucent" />
+	</activity>    
+	<activity
+		android:name="com.huawei.android.hms.agent.pay.HMSPayAgentActivity"
+		android:configChanges="orientation|locale|screenSize|layoutDirection|fontScale"
+		android:excludeFromRecents="true"
+		android:exported="false"
+		android:hardwareAccelerated="true"
+		android:theme="@android:style/Theme.Translucent" >
+		<meta-data
+			android:name="hwc-theme"
+			android:value="androidhwext:style/Theme.Emui.Translucent" />
+	</activity>          
+<!--end-->
+
+<!--sdkxml-->   
+<uses-permission android:name="android.permission.INTERNET" />    
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>  
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>  
+<uses-permission android:name="android.permission.READ_PHONE_STATE"/>     
+<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+<!--end-->

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dcn_interval1">10dp</dimen>
+    <dimen name="dcn_interval2">8dp</dimen>
+    <dimen name="dcn_interval3">6dp</dimen>
+    <dimen name="dcn_interval4">2dp</dimen>
+    <dimen name="dcn_interval5">1dp</dimen>
+    <dimen name="dcn_text_size000">21sp</dimen>
+    <dimen name="dcn_text_size00">19sp</dimen>
+    <dimen name="dcn_text_size0">17sp</dimen>
+    <dimen name="dcn_text_size1">15sp</dimen>
+    <dimen name="dcn_text_size2">13sp</dimen>
+    <dimen name="dcn_text_size3">11sp</dimen>
+    <dimen name="dcn_text_size4">10sp</dimen>
+    <dimen name="dcn_text_size5">9sp</dimen>
+    
+    <dimen name="dcn_sdk_width">320dp</dimen>
+    <dimen name="dcn_sdk_width_little">260dp</dimen>
+    <dimen name="dcn_sdk_lv_height">184dp</dimen>
+
+</resources>

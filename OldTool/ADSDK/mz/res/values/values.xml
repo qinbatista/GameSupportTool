@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mz_ad_icon_background_color">@android:color/transparent</color>
+    <color name="mz_ad_icon_background_color_night">@android:color/transparent</color>
+    <color name="mz_ad_image_background_color">@android:color/transparent</color>
+    <color name="mz_ad_image_background_color_night">@android:color/transparent</color>
+    <color name="mz_ad_label_background_color">#8f9ba1</color>
+    <color name="mz_ad_label_background_color_night">#8f9ba1</color>
+    <color name="mz_ad_label_text_color">@android:color/white</color>
+    <color name="mz_ad_label_text_color_black">#666666</color>
+    <color name="mz_ad_label_text_color_night">@android:color/white</color>
+    <color name="mz_ad_label_text_color_white">#cdffffff</color>
+    <color name="mz_ad_label_view_bg_color_black">#80000000</color>
+    <color name="mz_ad_label_view_bg_color_white">#f0f0f0</color>
+    <color name="mz_ad_skip">#80000000</color>
+    <color name="mz_ad_skip_text_color">@android:color/white</color>
+    <color name="mz_ad_title_background_color">@android:color/transparent</color>
+    <color name="mz_ad_title_background_color_night">@android:color/transparent</color>
+    <color name="mz_ad_title_text_color">@android:color/black</color>
+    <color name="mz_ad_title_text_color_night">@android:color/white</color>
+    <item format="float" name="mz_ad_icon_alpha" type="dimen">1.0</item>
+    <item format="float" name="mz_ad_icon_alpha_night" type="dimen">0.6</item>
+    <item format="float" name="mz_ad_icon_radius" type="dimen">4.0</item>
+    <item format="float" name="mz_ad_image_alpha" type="dimen">1.0</item>
+    <item format="float" name="mz_ad_image_alpha_night" type="dimen">0.6</item>
+    <item format="float" name="mz_ad_image_radius" type="dimen">4.0</item>
+    <item format="float" name="mz_ad_label_alpha" type="dimen">1.0</item>
+    <item format="float" name="mz_ad_label_alpha_night" type="dimen">1.0</item>
+    <dimen name="mz_ad_label_close_size">8dp</dimen>
+    <dimen name="mz_ad_label_height">16dip</dimen>
+    <dimen name="mz_ad_label_height_new">18dp</dimen>
+    <dimen name="mz_ad_label_radius">4px</dimen>
+    <dimen name="mz_ad_label_text_margin_right">7dip</dimen>
+    <dimen name="mz_ad_label_text_size">12dp</dimen>
+    <dimen name="mz_ad_label_text_size_new">10dp</dimen>
+    <dimen name="mz_ad_label_view_close_margin_left">5dp</dimen>
+    <dimen name="mz_ad_label_view_close_size">7dp</dimen>
+    <dimen name="mz_ad_label_view_padding">5dp</dimen>
+    <dimen name="mz_ad_label_width">29dip</dimen>
+    <dimen name="mz_ad_skip_corner">12dp</dimen>
+    <dimen name="mz_ad_skip_height">24dp</dimen>
+    <dimen name="mz_ad_skip_text_size">14dp</dimen>
+    <dimen name="mz_ad_skip_width">58dp</dimen>
+    <item format="float" name="mz_ad_title_alpha" type="dimen">1.0</item>
+    <item format="float" name="mz_ad_title_alpha_night" type="dimen">0.5</item>
+    <dimen name="mz_ad_title_text_size">16sp</dimen>
+    <item format="float" name="mz_ad_title_text_size_no_unit" type="dimen">16.0</item>
+    <item name="mz_ad_close" type="id"/>
+    <item name="mz_ad_container" type="id"/>
+    <item name="mz_ad_flipper" type="id"/>
+    <item name="mz_ad_icon" type="id"/>
+    <item name="mz_ad_image" type="id"/>
+    <item name="mz_ad_label" type="id"/>
+    <item name="mz_ad_label_view" type="id"/>
+    <item name="mz_ad_skip" type="id"/>
+    <item name="mz_ad_title" type="id"/>
+    <string name="mz_ad_label_close">✕</string>
+    <string name="mz_ad_label_text">广告</string>
+    <string name="mz_ad_skip">跳过</string>
+    <style name="MzAdAppBaseTheme" parent="@android:style/Theme.Black.NoTitleBar">
+    </style>
+    <style name="MzAdDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+    <style name="MzAdLabel" parent="@android:style/Widget.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:background">@drawable/mz_ad_label_shape</item>
+        <item name="android:textSize">@dimen/mz_ad_label_text_size</item>
+        <item name="android:textColor">@color/mz_ad_label_text_color</item>
+        <item name="android:width">@dimen/mz_ad_label_width</item>
+        <item name="android:height">@dimen/mz_ad_label_height</item>
+    </style>
+    <style name="MzAdTitle" parent="@android:style/Widget.TextView">
+        <item name="android:gravity">left</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/mz_ad_title_text_color</item>
+        <item name="android:textSize">@dimen/mz_ad_title_text_size</item>
+    </style>
+</resources>

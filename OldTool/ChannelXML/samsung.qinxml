@@ -1,0 +1,82 @@
+<!--sdk-->  
+        <activity
+            android:name="com.samsung.sdk.main.WebActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.samsung.ui.activity.PersonCenterActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name = "com.samsung.sdk.main.SamsungAccountActivity"
+                  android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"
+                  android:theme = "@android:style/Theme.Translucent"/>
+        <activity android:name="com.samsung.name.auth.NameAuthActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan">
+        <meta-data android:name="provider_authorities" android:value="@string/provider_authorities"/>
+		</activity>
+        
+        <activity
+            android:name="com.samsung.ui.activity.PayHubActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.samsung.ui.activity.IAppPayHubActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+
+        <activity
+            android:name="com.samsung.ui.activity.ChargeActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.samsung.pay.channel.gamepay.GamepayActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+		<activity 
+		android:name="com.samsung.ui.activity.CashCouponActivity"
+                  android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar">
+				  </activity>
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+
+        <provider
+            android:authorities="@string/provider_authorities"
+            android:name="com.samsung.name.auth.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+<!--end-->
+
+<!--sdkxml-->
+	 <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+<!--end-->

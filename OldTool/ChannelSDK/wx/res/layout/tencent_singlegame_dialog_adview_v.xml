@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tencent_singlegame_adsdk_dialog_adview_root_vc"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tencent_singlegame_adsdk_transparent" >
+
+    <LinearLayout
+        android:id="@+id/tencent_singlegame_adview_item_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dip"
+        android:orientation="vertical" 
+        android:background="@drawable/tencent_singlegame_adsdk_corner_background">
+
+        <LinearLayout
+            android:id="@+id/tencent_singlegame_adview_bigimg_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="8dip"
+            android:layout_marginBottom="2dip"
+            android:layout_marginRight="10dip"
+            android:orientation="horizontal" >
+
+            <com.tencent.singlegame.adsdk.widget.AsyncImageView
+                android:id="@+id/tencent_singlegame_adview_bigimg_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop" 
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"         
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/tencent_singlegame_adsdk_adview_listview_v"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left|center_vertical"
+                android:cacheColorHint="#ffffff"
+                android:divider="@drawable/tencent_singlegame_adsdk_spliteline"
+                android:dividerHeight="1dip"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="@drawable/tencent_singlegame_adsdk_adview_listselector"
+                android:scrollbars="none"
+                android:smoothScrollbar="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tencent_singlegame_adsdk_adview_close_v"
+        android:layout_width="42dip"
+        android:layout_height="42dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right|top"
+        android:background="@drawable/tencent_singlegame_bg_floatad_close"
+        android:layout_marginRight="2dip"
+        android:layout_marginTop="2dip"/>
+
+</RelativeLayout>

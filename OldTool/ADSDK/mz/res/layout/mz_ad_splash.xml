@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewFlipper
+        android:id="@id/mz_ad_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@id/mz_ad_skip"
+        android:background="@drawable/mz_ad_skip"
+        android:layout_width="@dimen/mz_ad_skip_width"
+        android:layout_height="@dimen/mz_ad_skip_height"
+        android:layout_alignRight="@id/mz_ad_flipper"
+        android:layout_margin="16dp"
+        android:textSize="@dimen/mz_ad_skip_text_size"
+        android:text="@string/mz_ad_skip"
+        android:gravity="center"
+        android:textColor="@color/mz_ad_skip_text_color"
+        android:layout_alignTop="@id/mz_ad_flipper"/>
+
+    <TextView
+        android:id="@id/mz_ad_label"
+        style="@style/MzAdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mz_ad_flipper"
+        android:layout_alignStart="@id/mz_ad_flipper"
+        android:layout_alignTop="@id/mz_ad_flipper"/>
+
+</RelativeLayout>

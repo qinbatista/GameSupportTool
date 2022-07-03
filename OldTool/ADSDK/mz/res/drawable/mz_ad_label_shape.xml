@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <size android:width="@dimen/mz_ad_label_width" android:height="@dimen/mz_ad_label_height"/>
+    <solid android:color="@color/mz_ad_label_background_color"/>
+    <corners android:radius="@dimen/mz_ad_label_radius"/>
+
+</shape>

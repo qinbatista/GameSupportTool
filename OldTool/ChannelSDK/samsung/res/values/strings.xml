@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <!--该值为provider_authorities，请保证每一个app该值唯一。 注意 两个具有相同的provider_authorities值为app无法同时安装一部手机里面 -->
+    <!--推荐 包名+xxxx字符串 -->
+    <string name="provider_authorities">${applicationId}.samsung.fileprovider</string>
+</resources>

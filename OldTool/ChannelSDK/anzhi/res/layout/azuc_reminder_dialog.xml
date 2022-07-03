@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/anzhi_bind_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="@string/dialog_title"
+                android:textColor="@color/anzhi_2b2b2b"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/anzhi_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="8dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/anzhi_button_bg_big_close" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/anzhi_line_color" />
+
+        <TextView
+            android:id="@+id/notice_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:text="@string/azuc_account_safe_message"
+            android:textColor="@color/anzhi_cFF666666"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/confirm"
+            style="@style/azuc_btn_bg_green"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:text="@string/confirm" />
+    </LinearLayout>
+
+</LinearLayout>

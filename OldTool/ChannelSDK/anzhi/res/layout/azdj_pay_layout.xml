@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/azdj_ab_navi_normal_b"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="150dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/azdj_arrow_back" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="@string/azdj_title_pay_center"
+                android:textColor="@color/normal_color"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/azdj_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/azdj_Com_name"
+                        android:textColor="@color/azdj_494949"
+                        android:textSize="16dp" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/good_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/azdj_6e6e6e"
+                        android:textSize="16dp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/azdj_e5e5e5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/azdj_Com_amount"
+                        android:textColor="@color/azdj_494949"
+                        android:textSize="16dp" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/good_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/azdj_6e6e6e"
+                        android:textSize="16dp" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/azdj_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/azdj_choose_pay"
+                        android:textColor="@color/azdj_494949"
+                        android:textSize="16dp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/azdj_e5e5e5" />
+
+                <RelativeLayout
+                    android:id="@+id/ll_wechat"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_wechat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/azdj_ic_wechat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/iv_wechat"
+                        android:text="@string/azdj_weixin_pay"
+                        android:textColor="@color/azdj_494949"
+                        android:textSize="16dp" >
+                    </TextView>
+
+                    <CheckBox
+                        android:id="@+id/cb_wechat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/azdj_bg_pay_checkbox"
+                        android:clickable="false" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/azdj_e5e5e5" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_alipay"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_alipay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/azdj_ic_zhifubao" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/iv_alipay"
+                        android:text="@string/azdj_alipay_pay"
+                        android:textColor="@color/azdj_494949"
+                        android:textSize="16dp" >
+                    </TextView>
+
+                    <CheckBox
+                        android:id="@+id/cb_alipay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/azdj_bg_pay_checkbox"
+                        android:clickable="false" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/azdj_e5e5e5" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_union"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_union"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/azdj_ic_yinlian" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/iv_union"
+                        android:text="@string/azdj_union_pay"
+                        android:textColor="@color/azdj_494949"
+                        android:textSize="16dp" >
+                    </TextView>
+
+                    <CheckBox
+                        android:id="@+id/cb_union"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/azdj_bg_pay_checkbox"
+                        android:clickable="false" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/azdj_bg_btn_blue"
+        android:text="@string/azdj_lm_pay"
+        android:textColor="@color/normal_color"
+        android:textSize="16dp" >
+    </Button>
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:textColor="@color/azdj_999999"
+        android:textSize="10dp" />
+
+</LinearLayout>

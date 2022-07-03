@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 左边 -->
+    <include
+        android:id="@+id/wd_payment_title"
+        layout="@layout/activity_payment_title" />
+
+
+    <FrameLayout
+        android:id="@+id/wd_pagment_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/wd_payment_title"></FrameLayout>
+</RelativeLayout>

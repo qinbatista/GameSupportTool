@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/anzhi_bind_bg_ad"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <TextView
+        style="@style/azuc_text_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/azuc_nickname_setting" />
+
+    <LinearLayout
+        android:id="@+id/submit_progressBar_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:indeterminateDrawable="@drawable/anzhi_progressbar" />
+
+        <TextView
+            android:id="@+id/load_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/azuc_submit_nickname_setting"
+            android:textColor="@color/anzhi_666666"
+            android:textSize="@dimen/text_size_16_pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nickname_gone"
+        style="@style/azuc_ll_login"
+        android:layout_marginTop="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <EditText
+            android:id="@+id/et_nickname"
+            style="@style/azuc_login_input_hint"
+            android:maxLength="16"
+            android:paddingLeft="5dp" />
+
+        <View
+            android:id="@+id/line_account"
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:background="@color/anzhi_d8d8d8" />
+
+        <ImageView
+            android:id="@+id/nickname_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/size_5"
+            android:src="@drawable/azuc_button_bg_delete" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/azuc_btn_bg_green"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:text="@string/azuc_submit" />
+
+    <TextView
+        android:id="@+id/notice_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/azuc_nickname_reminder"
+        android:textColor="@color/anzhi_cFF666666"
+        android:textSize="@dimen/text_size_16_pt" />
+
+</LinearLayout>

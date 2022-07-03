@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tencent_singlegame_adsdk_adviewitem_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <com.tencent.singlegame.adsdk.widget.AsyncImageView
+        android:id="@+id/tencent_singlegame_adsdk_adviewitem_icon_h"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity ="left|center_vertical"
+        android:scaleType="centerCrop"
+        android:layout_margin="0dip"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:orientation="vertical"
+        android:layout_margin="4dip"
+        android:layout_weight="0.56">
+
+        <TextView
+            android:id="@+id/tencent_singlegame_adsdk_adviewitem_gamename_h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end" 
+            android:singleLine="true"
+            android:textColor="#575757"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tencent_singlegame_adsdk_adviewitem_gametitle_h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#575757"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tencent_singlegame_adsdk_adviewitem_gamedesc_h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="#585858"
+            android:maxEms="15"  />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/tencent_singlegame_adsdk_adviewitem_downloadbtn"
+        android:layout_width="60dip"
+        android:layout_height="35dip"
+        android:layout_marginRight="10dip"
+        android:layout_gravity="right|center_vertical"
+        android:background="@drawable/tencent_singlegame_adsdk_bluebutton" >
+        <TextView
+            android:id="@+id/enter_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_gravity="center"
+            android:text="@string/tencent_singlegame_adsdk_downloadtext"
+            android:textColor="#ffffff"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center" />
+    </FrameLayout>
+
+</LinearLayout>

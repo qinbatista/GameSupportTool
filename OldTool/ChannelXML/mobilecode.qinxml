@@ -1,0 +1,28 @@
+<!--sdk-->
+    <service android:name="cn.cmgame.billing.service.GameService">
+    </service>
+    <service android:name="cn.cmgame.billing.service.GameService">
+    </service>
+    <activity android:name="cn.cmgame2_0.launch_model.shortcut.main.MiguHomeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="cn.cmgame2_0.category.migu_home" />
+      </intent-filter>
+    </activity>
+<!--end-->
+
+<!--sdkxml-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+  	<uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+  	<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+  	<uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+<!--end-->

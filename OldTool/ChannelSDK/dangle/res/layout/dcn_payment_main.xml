@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/dcn_interval3" >
+
+        <TextView
+            android:id="@+id/dcn_tvProductName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="120颗钻石120颗钻石120颗钻石120颗钻石120颗钻石颗钻石颗钻石"
+            android:textColor="#333"
+            android:textSize="@dimen/dcn_text_size1" />
+
+        <Button
+            android:id="@+id/dcn_btnExit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/dcn_close" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/dcn_tvOrderMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dcn_interval1"
+        android:gravity="center"
+        android:text="￥998"
+        android:textColor="#ff7800"
+        android:textSize="@dimen/dcn_text_size000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dcn_pay_choose_other"
+            android:textColor="#bbbbbb"
+            android:textSize="@dimen/dcn_text_size4" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dcn_lvPayType"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dcn_sdk_lv_height"
+        android:layout_marginBottom="@dimen/dcn_interval2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/dcn_interval2"
+        android:cacheColorHint="@null"
+        android:divider="@null"
+        android:dividerHeight="3dp"
+        android:listSelector="@android:color/transparent"
+        android:verticalSpacing="@dimen/dcn_interval3" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#dddddd"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dcn_btnPay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dcn_orange_btn_selector1"
+            android:text="@string/dcn_pay_immediate_payment"
+            android:textColor="#fff"
+            android:textSize="@dimen/dcn_text_size1" />
+    </LinearLayout>
+
+</LinearLayout>

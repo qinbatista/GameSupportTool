@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TencentSingleGameSDKCustomDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <string name="tencent_singlegame_adsdk_downloadtext">下载</string>
+
+    <drawable name="tencent_singlegame_adsdk_transparent">#00000000</drawable>
+
+</resources>

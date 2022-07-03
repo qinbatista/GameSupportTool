@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_color"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </View>
+
+    <Button
+        android:id="@+id/pay_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一个宝石（0.01元） "/>
+
+    <Button
+        android:id="@+id/pay_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一把宝石（0.1元） " />
+
+    <Button
+        android:id="@+id/pay_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一小堆宝石（1元 ）"  />
+
+    <Button
+        android:id="@+id/pay_d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="一大堆宝石（10元 ）" />
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--margin-->
+    <dimen name="login_margin">16dp</dimen>
+    <dimen name="login_margin_left">16dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_9">9dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_17">17dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_19">19dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_21">21dp</dimen>
+    <dimen name="margin_22">22dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+
+
+
+    <!--padding-->
+    <dimen name="dialog_padding">25dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_9">9dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_11">11dp</dimen>
+    <dimen name="padding_12">12dp</dimen>
+    <dimen name="padding_13">13dp</dimen>
+
+    <!--textsize-->
+    <dimen name="text_size_7">7sp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_21">21sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_size_23">23sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_25">25sp</dimen>
+    <dimen name="text_size_26">26sp</dimen>
+    <dimen name="text_size_27">27sp</dimen>
+    <dimen name="text_size_28">28sp</dimen>
+
+
+
+
+    <!-- 标题高度 -->
+    <dimen name="wepay_title_high">40dp</dimen>
+    <dimen name="wepay_content_width">298dp</dimen>
+    <dimen name="wepay_dialog_width">280dp</dimen>
+    <dimen name="wepay_content_height">40dp</dimen>
+
+    <!-- TextSize -->
+    <dimen name="wepay_txt_small">12sp</dimen>
+    <dimen name="wepay_txt_middle">14sp</dimen>
+    <dimen name="wepay_txt_large">16sp</dimen>
+    <dimen name="wepay_txt_xlarge">18sp</dimen>
+    <dimen name="wepay_txt_xxlarge">24sp</dimen>
+    <dimen name="wepay_txt_xxxlarge">30sp</dimen>
+    <dimen name="wepay_txt_xxxxlarge">36sp</dimen>
+
+    <!-- 间距 -->
+    <dimen name="wepay_space_xsmall">1dp</dimen>
+    <dimen name="wepay_space_small">4dp</dimen>
+    <dimen name="wepay_space_middle">8dp</dimen>
+    <dimen name="wepay_space_large">12dp</dimen>
+    <dimen name="wepay_space_xlarge">16dp</dimen>
+    <dimen name="wepay_space_xxlarge">24dp</dimen>
+    <dimen name="wepay_space_xxxlarge">32dp</dimen>
+    <dimen name="wepay_space_xxxxlarge">40dp</dimen>
+    <dimen name="wepay_space_xxxxxlarge">48dp</dimen>
+
+
+    <!-- 组件 -->
+    <dimen name="wepay_cp_checkcode_height">42dp</dimen>
+    <dimen name="wepay_cp_checkcode_width">44dp</dimen>
+    <dimen name="wepay_cp_checkcode_space">1dp</dimen>
+
+    <!-- key -->
+    <dimen name="wepay_key_height">48dp</dimen>
+
+    <!-- image-->
+    <dimen name="wepay_image_small">30dp</dimen>
+
+    <!-- 分割线 -->
+    <dimen name="wepay_divider_line_height">1dp</dimen>
+    <!-- 按钮 -->
+    <dimen name="wepay_operate_button_height">32dp</dimen>
+    <dimen name="wepay_operate_button_width">65dp</dimen>
+    <dimen name="wepay_dialog_button_height">36dp</dimen>
+    <!-- weight -->
+    <dimen name="wepay_widget_height">40dp</dimen>
+    <dimen name="wepay_padding_middle">15dp</dimen>
+    <dimen name="wepay_margin_h_middle">15dp</dimen>
+    <!-- toast -->
+    <dimen name="wepay_toast_height">36dp</dimen>
+    <!-- 银行卡信息 -->
+    <dimen name="wepay_space_logo_bankname">16dp</dimen>
+
+    <!-- 带左侧文本的输入框左侧padding -->
+    <dimen name="wepay_padding_input_edit">125dp</dimen>
+
+</resources>

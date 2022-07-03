@@ -1,0 +1,73 @@
+<!--sdk-->  
+  <!-- 竖屏 android:screenOrientation="sensorPortrait"  -->
+        <!-- 横屏 android:screenOrientation="sensorLandscape"  -->
+        <activity
+            android:name="com.iqiyigame.plugin.GameProxyActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" 
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.iqiyigame.plugin.GameProxyFragmentActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" 
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.iqiyi.sdk.platform.PermissionCheckActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.ipaynow.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="orientation|screenSize">
+        </activity>
+        
+        <service android:name="com.iqiyigame.plugin.GamePluginUpdateService"/>
+        <service android:name="com.iqiyi.sdk.platform.GamePushAdsService"/>
+        <service android:name="com.iqiyigame.plugin.GameProxyService"/>
+       
+<!--end-->
+
+<!--sdkxml-->
+ <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" /> 
+    
+    <uses-permission android:name="android.webkit.permission.PLUGIN" /> 
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> 
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" /> 
+    <uses-permission android:name="android.permission.READ_SMS" />
+    
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />  
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />  
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+<!--end-->

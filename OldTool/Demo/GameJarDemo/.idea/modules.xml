@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GameJarDemo.iml" filepath="$PROJECT_DIR$/GameJarDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/east2west/east2west.iml" filepath="$PROJECT_DIR$/east2west/east2west.iml" />
+    </modules>
+  </component>
+</project>

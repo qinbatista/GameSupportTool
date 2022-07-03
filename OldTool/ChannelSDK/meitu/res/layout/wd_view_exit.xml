@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wd_bg_dialog_shape_corner"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dialog_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/wd_iv_pass_find_back"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wd_ic_exit_logo" />
+
+            <ImageView
+                android:id="@+id/wd_iv_exit_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/wd_ic_account_close" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/wd_ll_exit_content"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@drawable/wd_bg_edit_shape_corner"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/wd_tv_exit_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="萌妹聚集地>>"
+                android:textColor="@color/wd_color_blue"
+                android:textSize="@dimen/text_size_20" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="@dimen/margin_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--android:background="@drawable/wd_bg_account_btn_gray_selector"-->
+
+            <Button
+                android:id="@+id/wd_btn_exit_logout"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_button_selector2"
+                android:gravity="center"
+                android:text="退出游戏"
+                android:textColor="@color/wd_color_white"
+                android:textSize="@dimen/text_size_14" />
+
+            <Button
+                android:id="@+id/wd_btn_exit_more"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_button_selector"
+                android:gravity="center"
+                android:text="更多游戏"
+                android:textColor="#288edf"
+                android:textSize="@dimen/text_size_14" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

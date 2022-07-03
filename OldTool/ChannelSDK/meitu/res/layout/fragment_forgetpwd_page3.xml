@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical"
+    tools:showIn="@layout/fragment_base_forgetpwd">
+
+    <TextView
+        android:id="@+id/wd_tv_notice_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="用户名：12362589547"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+
+        />
+
+    <TextView
+        android:id="@+id/wd_tv_notice_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="尚未绑定手机"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="如有需要请联系客服"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="客服电话：020-66608191转91"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="客服邮箱：kf@91wan.com"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp" />
+</LinearLayout>

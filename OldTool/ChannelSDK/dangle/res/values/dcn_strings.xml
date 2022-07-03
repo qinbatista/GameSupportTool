@@ -1,0 +1,49 @@
+<resources>
+
+    <string name="dcn_app_name">spsdk_android_library</string>
+    <string name="dcn_please_waiting">请稍候&#8230;</string>
+    <!-- 退出登录对话框 -->
+    <string name="dcn_pay_exit_content1">交易未完成，是否确认退出？</string>
+    <string name="dcn_pay_exit_content">亲，酱紫离开不能获取道具哦！</string>
+    <string name="dcn_pay_exit_confirm1">确认退出</string>
+    <string name="dcn_pay_exit_confirm">不买了</string>
+    <string name="dcn_pay_exit_continue">继续支付</string>
+
+    <!-- 游戏支付 -->
+    <string name="dcn_pay_title">游戏支付</string>
+    <string name="dcn_pay_product_money">订单金额：</string>
+    <string name="dcn_pay_product_name">商品名称：</string>
+    <string name="dcn_pay_type">支付方式：</string>
+    <string name="dcn_pay_choose_other">选择支付方式</string>
+    <string name="dcn_pay_real_payment">实付款：</string>
+    <string name="dcn_pay_immediate_payment">立即支付</string>
+    <string name="dcn_pay_success">支付成功</string>
+    <string name="dcn_pay_net_hint">需要连上网络才能购买道具哦</string>
+    <string name="dcn_pay_countdown_back_game">将在@1s后返回游戏</string>
+    <string name="dcn_pay_countdown_back_channel">将在@1s后进入收银台</string>
+
+    <!-- hint -->
+    <string name="dcn_pay_getinfo_fail">获取支付信息失败！</string>
+    <string name="dcn_pay_getchannel_fail">获取支付渠道失败！</string>
+    <string name="dcn_pay_initchannel_fail">该设备暂不支持短信支付！</string>
+    <string name="dcn_pay_parameter_error">参数错误！</string>
+    <string name="dcn_pay_already_buy">该玩家已买过此商品</string>
+    <string name="dcn_pay_channel_nonsupport">该支付方式暂不支持！</string>
+    <string name="dcn_pay_dianxin_init">电信初始化中</string>
+
+    <!-- 支付宝 -->
+    <string name="dcn_pay_alidaikou_open_hint_title">开通支付宝免密支付</string>
+    <string name="dcn_pay_alidaikou_open_hint_content">签约成功后，单笔订单金额小于100元时无需验证支付密码即可成功购买，玩游戏就是要方便任性！</string>
+    <string name="dcn_pay_alidaikou_open_fail_title">支付宝免密支付开通失败</string>
+    <string name="dcn_pay_alidaikou_open_fail_content">您可稍后再次尝试开通支付宝免密支付，或使用支付宝密码验证方式继续支付。</string>
+    <string name="dcn_pay_alidaikou_open_hint_refuse">暂不开通</string>
+    
+    <!-- 通用 -->
+    <string name="dcn_confirm">确定</string>
+    <string name="dcn_pay_open">立即开通</string>
+    <string name="dcn_pay_no_hint">不再提醒</string>
+    <string name="dcn_pay_order_handling">订单处理中</string>
+    <string name="dcn_pay_order_handling_remark">道具通常会在扣款后五分钟内到账，请关闭窗口耐心等待哦</string>
+    <string name="dcn_pay_fail">支付失败</string>
+    
+</resources>

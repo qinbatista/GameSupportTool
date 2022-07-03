@@ -1,0 +1,99 @@
+<!--sdk-->
+<activity
+            android:name="com.downjoy.activity.SdkActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/dcn_dialog_activity"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="97" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <uses-library
+            android:name="org.simalliance.openmobileapi"
+            android:required="false" />
+<activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.unionpay.UPPayWapActivity"
+            android:configChanges="orientation|keyboardHidden|fontScale"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <activity
+            android:name="com.ipaynow.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="WeChatPayActivity"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.switfpass.pay.activity.QQWapPayWebView"
+            android:screenOrientation="landscape" />
+
+
+        <activity
+            android:name="com.wepayplugin.nfc.ui.PayStartActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.wepayplugin.nfc.ui.SwiperCardActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.wepayplugin.nfc.ui.PayResultActivity"
+			android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" />  
+<!--end-->
+
+<!--sdkxml-->
+  <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.GET_TASKS" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="com.android.vending.BILLING" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.SEND_SMS" />
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+  <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+  <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+  <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+  <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+  <uses-permission android:name="android.permission.CALL_PHONE" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  <uses-permission android:name="android.permission.READ_LOGS" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+  <uses-permission android:name="android.webkit.permission.PLUGIN" />
+  <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+  <uses-permission android:name="android.permission.RECEIVE_SMS" />
+  <uses-permission android:name="android.permission.READ_SMS"/>
+  <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+<!--end-->

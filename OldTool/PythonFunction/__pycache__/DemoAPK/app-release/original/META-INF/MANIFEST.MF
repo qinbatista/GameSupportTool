@@ -1,0 +1,52 @@
+Manifest-Version: 1.0
+Built-By: Generated-by-ADT
+Created-By: Android Gradle 3.5.3
+
+Name: AndroidManifest.xml
+SHA-256-Digest: UJx46V1Lsi+BDg3lz4sB7prUYAJ3snj7Bvyf1uQN5UU=
+
+Name: classes.dex
+SHA-256-Digest: iPgfV6wKtv44GX6oJF8cgu0rcrcw+T3o91INv9VoxHc=
+
+Name: res/drawable-hdpi-v4/app_icon.png
+SHA-256-Digest: cFG36mSuKlMvpn4K0tb4wekVAu3MHp/zVw0PcODCP3M=
+
+Name: res/drawable-hdpi-v4/ic_launcher.png
+SHA-256-Digest: JvcwK/K024RQvSdJmltwi/QZb9xRwAMaDwHadxnMMw0=
+
+Name: res/drawable-ldpi-v4/app_icon.png
+SHA-256-Digest: cFG36mSuKlMvpn4K0tb4wekVAu3MHp/zVw0PcODCP3M=
+
+Name: res/drawable-mdpi-v4/app_icon.png
+SHA-256-Digest: cFG36mSuKlMvpn4K0tb4wekVAu3MHp/zVw0PcODCP3M=
+
+Name: res/drawable-mdpi-v4/ic_launcher.png
+SHA-256-Digest: 2OTOrXSGQMgAymxeuphbQt3OppGmdjpnrugIJtT4iaM=
+
+Name: res/drawable-tvdpi-v4/app_icon.png
+SHA-256-Digest: cFG36mSuKlMvpn4K0tb4wekVAu3MHp/zVw0PcODCP3M=
+
+Name: res/drawable-xhdpi-v4/app_icon.png
+SHA-256-Digest: cFG36mSuKlMvpn4K0tb4wekVAu3MHp/zVw0PcODCP3M=
+
+Name: res/drawable-xhdpi-v4/ic_launcher.png
+SHA-256-Digest: r73bTJnEjZDXpiYFJHGOJiqEj9JrFMmJSkYr/Ua2eQw=
+
+Name: res/drawable/app_icon.png
+SHA-256-Digest: cFG36mSuKlMvpn4K0tb4wekVAu3MHp/zVw0PcODCP3M=
+
+Name: res/drawable/logo.png
+SHA-256-Digest: q4YFHn1w2iMYsLbQY8y7WVhvnvdzb+Mxlm8E68cU04I=
+
+Name: res/drawable/splash.png
+SHA-256-Digest: yT9sVsOESLnv0sSoVYQApZGSQsJqAUlp2op40SfSWkA=
+
+Name: res/layout/activity_main.xml
+SHA-256-Digest: D2zI5NtTYq2HNKyb0azDqnFKuEM6T3gbnmSwSthO4HM=
+
+Name: res/menu/main.xml
+SHA-256-Digest: QPzjg8USjn7v9aAKfkrLIbxhUWMsXzV82rEAwt5NVsg=
+
+Name: resources.arsc
+SHA-256-Digest: I7NZJ4N4+KEZjPhCgrH8KxQJ+sL9dVgNyOre/gsMJgs=
+

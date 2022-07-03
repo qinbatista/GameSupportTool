@@ -1,0 +1,21 @@
+<!--sdk-->  
+    <meta-data android:name="SMARTISAN_APPID" android:value="20000054" />
+    <activity android:name="com.smartisan.gamesdk.activity.LoginActivity" android:theme="@android:style/Theme.Translucent" android:configChanges="orientation|screenSize|uiMode" android:screenOrientation="behind" /> 
+    <activity android:name="com.smartisan.gamesdk.activity.WeixinActivity" android:theme="@android:style/Theme.Translucent" android:configChanges="orientation|screenSize|uiMode" android:screenOrientation="behind" />
+    <activity android:name="com.alipay.sdk.app.H5PayActivity" android:configChanges="orientation|keyboardHidden|navigation|screenSize" android:exported="false" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize|stateHidden" />  
+<!--end-->
+
+<!--sdkxml-->
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
+  <uses-permission android:name="android.permission.INTERNET" /> 
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> 
+  <uses-permission android:name="android.permission.GET_TASKS" /> 
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> 
+  <uses-permission android:name="com.smartisan.permission.ACCOUNT_CENTER"/> 
+  <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" /> 
+  <uses-permission android:name="android.permission.NFC" /> 
+  <uses-feature android:name="android.hardware.nfc.hce"/>
+<!--end-->

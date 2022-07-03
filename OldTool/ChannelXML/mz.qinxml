@@ -1,0 +1,80 @@
+<!--sdk--> 
+    <activity 
+    android:name="com.meizu.atlas.server.am.ProxyActivity" 
+    android:configChanges="screenLayout|screenSize|orientation|keyboardHidden" 
+    android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"> 
+    <intent-filter> 
+        <action android:name="android.intent.action.VIEW" />  
+        <category android:name="android.intent.category.DEFAULT" /> 
+        <category android:name="android.intent.category.BROWSABLE" />  
+        <data 
+            android:host="alipay" 
+            android:scheme="com.djinnworks.StickmanBasketball" /> 
+    </intent-filter> 
+</activity>  
+<activity 
+    android:name="com.meizu.atlas.server.am.OrientationLProxyActivity" 
+    android:configChanges="screenLayout|screenSize|orientation|keyboardHidden" 
+    android:screenOrientation="landscape" 
+    android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />  
+<activity 
+    android:name="com.meizu.atlas.server.am.OrientationPProxyActivity" 
+    android:configChanges="screenLayout|screenSize|orientation|keyboardHidden" 
+    android:screenOrientation="portrait" 
+    android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />  
+<activity 
+    android:name="com.meizu.atlas.server.am.TranslucentProxyActivity"
+    android:configChanges="screenLayout|screenSize|orientation|keyboardHidden" 
+    android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />  
+<activity 
+    android:name="com.meizu.atlas.server.am.ConfigChangesProxyActivity" 
+    android:configChanges="screenLayout|screenSize|orientation|keyboardHidden" 
+    android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />  
+<activity 
+    android:name="com.meizu.atlas.server.am.TranslCfgChangesProxyActivity" 
+    android:configChanges="screenLayout|screenSize|orientation|keyboardHidden" 
+    android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />  
+<activity 
+    android:name="com.meizu.gamesdk.update.UpdateActivity" 
+    android:configChanges="screenLayout|screenSize|orientation|keyboardHidden" 
+    android:theme="@android:style/Theme.Translucent" />  
+<service 
+    android:name="com.meizu.atlas.server.am.stub.ProxyService" 
+    android:exported="false"> 
+    <intent-filter> 
+        <action android:name="android.intent.action.MAIN" /> 
+        <category android:name="com.meizu.atlas.server.am.PROXY_STUB" /> 
+    </intent-filter> </service>   
+<!--end-->
+
+<!--sdkxml-->
+	<uses-permission android:name="android.permission.NFC" />
+	<uses-permission android:name="android.webkit.permission.PLUGIN" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.WRITE_SMS" />
+	<uses-permission android:name="com.xiaomi.sdk.permission.PAYMENT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+<!--end-->

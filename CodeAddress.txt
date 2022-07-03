@@ -1,0 +1,86 @@
+-singmaanoffice
+	[demo.git]	
+	git clone ssh://singmaanoffice@office.singmaan.com:10022/Repositories/singmaanoffice/demo.git
+		
+	[legend_h5.git]	
+	git clone ssh://singmaanoffice@office.singmaan.com:10022/Repositories/singmaanoffice/legend_h5.git
+		
+	[craftsman.git]	
+	git clone ssh://singmaanoffice@office.singmaan.com:10022/Repositories/singmaanoffice/craftsman.git
+		
+	[lovingcat.git]	
+	git clone ssh://singmaanoffice@office.singmaan.com:10022/Repositories/singmaanoffice/lovingcat.git
+		
+	[micemice.git]	
+	git clone ssh://singmaanoffice@office.singmaan.com:10022/Repositories/singmaanoffice/micemice.git
+		
+	[singmaan_sdk.git]	
+	git clone ssh://singmaanoffice@office.singmaan.com:10022/Repositories/singmaanoffice/singmaan_sdk.git
+		
+	[websit_oversea.git]	
+	git clone ssh://singmaanoffice@office.singmaan.com:10022/Repositories/singmaanoffice/websit_oversea.git
+		
+	[game_spider.git]	
+	git clone ssh://singmaanoffice@office.singmaan.com:10022/Repositories/singmaanoffice/game_spider.git
+		
+	[singmaanSDK.git]	
+	git clone ssh://singmaanoffice@office.singmaan.com:10022/Repositories/singmaanoffice/singmaanSDK.git
+		
+	[rainbowparty.git]	
+	git clone ssh://singmaanoffice@office.singmaan.com:10022/Repositories/singmaanoffice/rainbowparty.git
+		
+	[SingmaanGame.git]	
+	git clone ssh://singmaanoffice@office.singmaan.com:10022/Repositories/singmaanoffice/SingmaanGame.git
+		
+	[yuanbao_IOS.git]	
+	git clone ssh://singmaanoffice@office.singmaan.com:10022/Repositories/singmaanoffice/yuanbao_IOS.git
+		
+	[yuanbao_android.git]	
+	git clone ssh://singmaanoffice@office.singmaan.com:10022/Repositories/singmaanoffice/yuanbao_android.git
+		
+	[NewStartManager.git]	
+	git clone ssh://singmaanoffice@office.singmaan.com:10022/Repositories/singmaanoffice/NewStartManager.git
+		
+-test
+	[test.git]	
+	git clone ssh://test@office.singmaan.com:10022/Repositories/test/test.git
+		
+-fuerogames
+	[brick_royale.git]	
+	git clone ssh://fuerogames@office.singmaan.com:10022/Repositories/fuerogames/brick_royale.git
+		
+-homenet
+	[ww1.git]	
+	git clone ssh://homenet@office.singmaan.com:10022/Repositories/homenet/ww1.git
+		
+-insightforhire
+	[NewStarManager.git]	
+	git clone ssh://insightforhire@office.singmaan.com:10022/Repositories/insightforhire/NewStarManager.git
+		
+-invictus
+	[GiveItUp3.git]	
+	git clone ssh://invictus@office.singmaan.com:10022/Repositories/invictus/GiveItUp3.git
+		
+	[GiveItUpAR.git]	
+	git clone ssh://invictus@office.singmaan.com:10022/Repositories/invictus/GiveItUpAR.git
+		
+	[GiveItUpStack.git]	
+	git clone ssh://invictus@office.singmaan.com:10022/Repositories/invictus/GiveItUpStack.git
+		
+	[GiveItUpFall.git]	
+	git clone ssh://invictus@office.singmaan.com:10022/Repositories/invictus/GiveItUpFall.git
+		
+	[GiveItUp5.git]	
+	git clone ssh://invictus@office.singmaan.com:10022/Repositories/invictus/GiveItUp5.git
+		
+-gameplan
+	[chuanqi.git]	
+	git clone ssh://gameplan@office.singmaan.com:10022/Repositories/gameplan/chuanqi.git
+		
+-koalastudios
+	[goolegend.git]	
+	git clone ssh://koalastudios@office.singmaan.com:10022/Repositories/koalastudios/goolegend.git
+		
+-flaregames
+	[nonstopknight2.git]	
+	git clone ssh://flaregames@office.singmaan.com:10022/Repositories/flaregames/nonstopknight2.gi

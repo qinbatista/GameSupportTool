@@ -1,0 +1,68 @@
+<!--sdk-->
+
+       
+		<activity 
+		android:name="cn.egame.terminal.paysdk.EgamePayActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" 
+		android:screenOrientation="landscape" 
+		android:configChanges="orientation|keyboardHidden|screenSize"> 
+		</activity>
+
+
+		<receiver
+            android:name="cn.egame.terminal.sdk.EgameCoreReceiver">
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="cn.egame.terminal.sdk.RECEIVER_CMD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="cn.egame.terminal.sdk.EgameCoreService"
+            android:process=":egameCore" >
+            <intent-filter>
+                <action android:name="cn.egame.terminal.sdk.SERVICE_CMD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+		
+        <activity
+            android:name="cn.egame.terminal.sdk.EgameCoreActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:process=":egameCore"
+            android:screenOrientation="behind"
+            android:taskAffinity=":egameCore"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+<!--end-->
+
+<!--sdkxml-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+	<uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+	<uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+<!--end-->

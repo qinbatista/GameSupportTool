@@ -1,0 +1,164 @@
+<!--sdk-->  
+		<meta-data android:name="com.tencent.rdm.uuid" android:value="f5c6afd9-e3c6-4166-983f-cb85c263a001" />
+ <activity
+           android:name="com.tencent.midas.sample.skeylogin.Login"
+           android:windowSoftInputMode="stateAlwaysHidden"
+            >
+      	</activity>
+      	 <activity
+           android:name="com.tencent.midas.sample.pay.APMidasMainDemo"
+           android:windowSoftInputMode="stateAlwaysHidden"
+            >  
+         </activity>
+        <activity
+           android:name="com.tencent.midas.sample.MidasPayActivity"
+           android:windowSoftInputMode="stateAlwaysHidden"
+           android:configChanges="orientation|keyboardHidden"
+           android:theme="@android:style/Theme.NoTitleBar"
+            >   
+      </activity>
+      	<activity 
+  		    android:name="com.tencent.midas.sample.pay.PaySampleActivity"
+            android:screenOrientation="landscape"
+  		    android:theme="@android:style/Theme.NoTitleBar"  />
+  		<activity 
+  		    android:name="com.tencent.midas.sample.pay.H5PaySampleActivity"
+            android:screenOrientation="landscape"
+  		    android:theme="@android:style/Theme.NoTitleBar"  />
+  		
+        <!-- TODO SDK接入 QQ接入配置 START -->
+              <activity
+            android:name="com.tencent.tauth.AuthActivity"
+          
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105852964" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- TODO SDK接入 QQ接入配置 END -->
+  	
+        <!-- TODO SDK接入 微信接入配置 START -->
+        <activity
+            android:name="com.tencent.tmgp.samorost3.wxapi.WXEntryActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="WXEntryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:taskAffinity="com.tencent.tmgp.QuestRush.diff" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wxc3beca96582cc368" />
+            </intent-filter>
+        </activity>
+      	<!-- TODO SDK接入 微信接入配置 end -->
+  		<!-- Midas activity start  -->
+  		<!-- 如果游戏是竖屏，请设置android:screenOrientation="landscape" -->
+  		<!-- screenSize在sdk13以上使用，如果sdk版本不是13以上，请删除该属性 -->
+        <activity 
+            android:name="com.tencent.midas.proxyactivity.APMidasPayProxyActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity 
+            android:name="com.tencent.midas.wx.APMidasWXPayActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="true" />
+          <activity android:name="com.tencent.midas.jsbridge.APWebJSBridgeActivity"
+	   		android:theme="@android:style/Theme.Translucent.NoTitleBar"
+	   		android:windowSoftInputMode="stateAlwaysHidden"/>
+            
+		<!-- Midas activity end  -->
+		
+		<!-- QQ钱包 -->
+        <activity 
+            android:name="com.tencent.midas.qq.APMidasQQWalletActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            >
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"></category>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <data android:scheme="qwallet1105852964"></data>
+            </intent-filter>
+            
+        </activity>
+		                <activity
+                android:name="com.tencent.msdk.weixin.qrcode.WXQrCodeActivity"
+                android:excludeFromRecents="true"
+                android:exported="true"
+                android:label="WXQrCodeActivity"
+                android:launchMode="singleTop"
+                android:taskAffinity="com.example.wegame.diff" 
+                android:configChanges="orientation|screenSize|keyboardHidden"
+                android:theme="@android:style/Theme.Light.NoTitleBar"
+                android:screenOrientation="landscape">
+              </activity>
+		<service 
+			android:name="com.tencent.singlegame.adsdk.logic.DownloadService"    
+			android:exported="false"/> 
+<!--end-->
+
+<!--sdkxml-->
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/> 
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />    
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.RESTART_PACKAGES" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" /> 
+<!--end-->

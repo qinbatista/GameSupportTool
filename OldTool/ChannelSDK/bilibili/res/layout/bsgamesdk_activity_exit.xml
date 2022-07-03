@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="?attr/bsgamesdk_main_background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/bsgamesdk_titleLayout"
+        layout="@layout/bsgamesdk_title" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/bsgamesdk_transparent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content" >
+
+            <com.bsgamesdk.android.widget.RoundImageViewByXfermode
+                android:id="@+id/bsgamesdk_id_gameout_img"
+                android:layout_width="240dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bsgamesdk_bg_input"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                custom:borderRadius="2dp"
+                custom:type="round" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/bsgamesdk_id_gameout_out"
+                style="?attr/bsgamesdk_confirm_button_style"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentLeft="true"
+                android:text="@string/bsgamesdk_out" />
+
+            <Button
+                android:id="@+id/bsgamesdk_id_gameout_forum"
+                style="?attr/bsgamesdk_confirm_button_style"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentRight="true"
+                android:text="@string/bsgamesdk_forum" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

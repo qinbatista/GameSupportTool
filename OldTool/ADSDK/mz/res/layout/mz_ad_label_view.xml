@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/mz_ad_label_height_new"
+    android:gravity="center"
+    android:paddingLeft="@dimen/mz_ad_label_view_padding"
+    android:paddingRight="@dimen/mz_ad_label_view_padding">
+
+    <com.meizu.advertise.plugin.view.element.AdLabelView
+        android:id="@id/mz_ad_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mz_ad_label_text"
+        android:textColor="@color/mz_ad_label_text_color_black"
+        android:textSize="@dimen/mz_ad_label_text_size_new"/>
+
+    <com.meizu.advertise.plugin.view.element.AdCloseView
+        android:id="@id/mz_ad_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mz_ad_label_view_close_margin_left"
+        android:text="@string/mz_ad_label_close"
+        android:textColor="@color/mz_ad_label_text_color_black"
+        android:textSize="@dimen/mz_ad_label_close_size"/>
+
+</LinearLayout>

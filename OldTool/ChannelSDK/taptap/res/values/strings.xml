@@ -1,0 +1,11 @@
+<resources>
+
+
+    <!--以下为需要导入项目的资源-->
+    <string name="taptap_alert_license_no">游戏未激活，请前往TapTap购买此游戏</string>
+    <string name="taptap_alert_open_taptap">TapTap服务启动失败，请打开TapTap并从TapTap中重新启动游戏</string>
+    <string name="taptap_alert_download_taptap">本游戏需要最新版TapTap服务支持，请下载最新版本TapTap</string>
+
+    <string name="taptap_string_open_taptap">打开TapTap</string>
+    <string name="taptap_string_download_taptap">下载TapTap</string>
+</resources>

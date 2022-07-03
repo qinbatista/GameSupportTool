@@ -1,0 +1,297 @@
+<!--sdk-->
+          <meta-data
+          android:name="dksdk_appid"
+          android:value="8915035" />
+          <meta-data
+          android:name="dksdk_appkey"
+          android:value="jQlYkrvlQMl9kwqbGz1XGMkK" />
+          <meta-data
+          android:name="dksdk_appsecret"
+          android:value="cl0ap4BWM9qxTwfKupBInztxKYnWaxGz" />
+          <meta-data
+          android:name="dksdk_channel"
+          android:value="14146" />
+          <meta-data
+          android:name="dksdk_ver"
+          android:value="211"/>
+
+        
+        <!-- 不需要横竖屏 -->
+        <activity
+            android:name="air.amanita_design.samorost3.E2W.baidu.GamePropsActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" 
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden" 
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name="air.amanita_design.samorost3.E2W.baidu.GameRechargeActivity"
+                android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden" 
+            android:screenOrientation="landscape"/>
+        <!-- SDK -->
+        <activity
+            android:name="com.duoku.platform.single.ui.DKContainerActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:theme="@style/DK.Theme.NoBackGround.NoAnimation"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.duoku.platform.single.ui.DKRecommendActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:theme="@style/DK.Theme.NoBackGround.NoAnimation"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.duoku.platform.single.ui.DKStartDownloadActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:theme="@style/dksdk_theme_dialog"
+            android:screenOrientation="landscape"/>
+		<activity
+            android:name="com.duoku.platform.single.ui.DKLotteryDrawActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:theme="@style/DK.Theme.NoBackGround.NoAnimation"
+            android:screenOrientation="landscape">
+        </activity>
+        
+		<activity
+            android:name="com.duoku.platform.single.bdpass.DKAccountContainerActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:theme="@style/DK.Theme.NoBackGround.NoAnimation"
+            android:screenOrientation="landscape">
+        </activity>
+		
+        <!-- alipay sdk begin -->
+         <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <!-- alipay sdk end -->
+        
+        <!-- 聚合微信支付 start -->
+        <activity
+            android:name="com.ipaynow.wechatpay.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <!-- 聚合微信支付 end -->
+        
+        
+        <!-- for weixin plugin -->
+        <activity 
+            android:name="com.baidu.platformsdk.wxpay.PayActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <!-- for weixin plugin end -->
+        
+        
+        <receiver android:name="com.duoku.platform.single.receiver.PushMessageReceiver">
+            <intent-filter
+                android:priority="2147483647">
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+        
+		<receiver android:name="com.baidu.android.pushservice.PushServiceReceiver"
+		    android:process=":bdservice_v1" >
+		    <intent-filter>
+		        <action android:name="android.intent.action.BOOT_COMPLETED" />
+		        <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+		        <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+		        <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+		        <action android:name="android.intent.action.MEDIA_MOUNTED" />
+		        <action android:name="android.intent.action.USER_PRESENT" />
+		        <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+		        <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+		    </intent-filter>
+		</receiver>
+
+		<receiver android:name="com.baidu.android.pushservice.RegistrationReceiver"
+		    android:process=":bdservice_v1" >
+		    <intent-filter>
+		        <action android:name="com.baidu.android.pushservice.action.METHOD" />
+		        <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="android.intent.action.PACKAGE_REMOVED" />
+		        <data android:scheme="package" />
+		    </intent-filter>
+		</receiver>
+
+        
+		<service android:name="com.baidu.android.pushservice.PushService" android:exported="true"
+		    android:process=":bdservice_v1" >
+		    <intent-filter >
+		            <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+		    </intent-filter>
+		</service>        
+		<service android:name="com.baidu.android.pushservice.CommandService"
+		    android:exported="true" />
+
+		<provider
+		    android:name="com.baidu.android.pushservice.PushInfoProvider"
+		    android:authorities="air.amanita_design.samorost3.E2W.baidu.bdpush"
+		    android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.air.amanita_design.samorost3.E2W.baidu"
+		    android:protectionLevel = "signature"
+		    android:exported="true" />
+		
+
+        <service android:name="com.duoku.platform.single.gameplus.service.GPDownloadService" 
+            android:process="com.baidu.platform.gameplus.service"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.baidu.platform.gameplus.service" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.duoku.platform.single.gameplus.install.GPSilentInstallService"/>
+        <receiver android:name="com.duoku.platform.single.gameplus.broadcast.GPNotificaionReceiver">
+            <intent-filter>
+                <action android:name="baidu.platform.gameplus.intent.action.CANCLE_NOTIFICATION"/>
+                <action android:name="baidu.platform.gameplus.intent.action.DO_NOTIFICATION_CLICK"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" /> 
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.duoku.platform.single.ui.DKVerifyActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/DK.Theme.NoBackGround.NoAnimation"
+            android:screenOrientation="landscape"/>
+
+
+        <meta-data
+            android:name="BDPlatformType"
+            android:value="0" />
+        <meta-data
+            android:name="BDGameVersion"
+            android:value="3.7.5" />
+
+        <activity
+            android:name="com.baidu.platformsdk.LoginActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/dk_bdp_style_transparent"/>
+        <activity
+            android:name="com.baidu.platformsdk.AssistActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/dk_bdp_style_transparent"/>
+        <activity
+            android:name="com.baidu.platformsdk.ConcertActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/dk_bdp_style_transparent"/>
+        <activity
+            android:name="com.baidu.platformsdk.BindPhoneActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/dk_bdp_style_transparent"/>
+        <activity
+            android:name="com.baidu.platformsdk.WebActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.baidu.platformsdk.ModifyPasswordActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/dk_bdp_style_transparent"/>
+        <activity
+            android:name="com.baidu.platformsdk.ThirdPartyLoginActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.baidu.platformsdk.VisitorBindActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/dk_bdp_style_transparent" />
+        <activity
+            android:name="com.baidu.platformsdk.SapiWebActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/dk_bdp_style_transparent"/>
+        <activity
+            android:name="com.baidu.platformsdk.SapiLoginProxyActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/bdp_dialog_style_fullscreen"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.baidu.platformsdk.AuthenticateActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/dk_bdp_style_transparent"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <service
+            android:name="com.baidu.platformsdk.BDPlatformService"
+            android:exported="false" />
+
+
+		
+
+<!--end-->
+
+<!--sdkxml-->
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	
+	<uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+	<uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.air.amanita_design.samorost3.E2W.baidu" />
+	<permission
+	        android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.air.amanita_design.samorost3.E2W.baidu"
+	        android:protectionLevel="normal">
+	</permission>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />  
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+	<uses-permission android:name="android.webkit.permission.PLUGIN" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+<!--end-->

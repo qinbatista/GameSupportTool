@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/activity_payment_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="#d3ebfd">
+
+        <TextView
+            android:id="@+id/activity_payment_left_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="19dp"
+            android:text="当前账号："
+            android:textSize="16sp"
+             android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/activity_payment_left_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/activity_payment_left_account"
+            android:layout_alignBottom="@+id/activity_payment_left_account"
+            android:layout_toEndOf="@+id/activity_payment_left_account"
+            android:layout_toRightOf="@+id/activity_payment_left_account"
+            android:maxLines="1"
+            android:text="XXXXXXXXXXXXX"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+             android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/activity_payment_left_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="19dp"
+            android:text="应付金额："
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/activity_payment_left_money_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/activity_payment_left_money"
+            android:layout_alignBottom="@+id/activity_payment_left_money"
+            android:layout_toEndOf="@+id/activity_payment_left_money"
+            android:layout_toRightOf="@+id/activity_payment_left_money"
+            android:maxLines="1"
+            android:text="XXXXXXXXXXXXX"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/activity_payment_left_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_payment_left_money_text"
+            android:layout_marginTop="19dp"
+            android:layout_toLeftOf="@+id/activity_payment_left_game_text"
+            android:layout_toStartOf="@+id/activity_payment_left_game_text"
+            android:text="游戏名称："
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/activity_payment_left_game_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/activity_payment_left_money_text"
+            android:layout_alignStart="@+id/activity_payment_left_money_text"
+            android:layout_alignTop="@+id/activity_payment_left_game"
+            android:maxLines="1"
+            android:text="XXXXXXXXXXXXX"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#288edf" />
+
+        <TextView
+            android:id="@+id/activity_payment_left_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:text="客服：020-66608191转91" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_payment_right"
+        android:layout_width="0dp"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+        <TextView
+            android:id="@+id/activity_payment_right_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="请选择支付方式:"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_payment_right_paywaylist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/activity_payment_right_title"></android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
