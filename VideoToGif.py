@@ -16,7 +16,7 @@ def main():
 
     # Get the file extension
     file_extension = os.path.splitext(path)[1]
-    if os.path.exists(f"{directory}/filename_without_extension.gif"):
+    if os.path.exists(f"{directory}/{filename_without_extension}.gif"):
         shutil.rmtree(path)
     os.system(f"ffmpeg -ss 00:00:00.000 -i {path} -pix_fmt rgb24 -r 10 -s 1280x960 -t 00:00:10.000 {directory}/{filename_without_extension}.gif")
 
